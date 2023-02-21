@@ -1,0 +1,178 @@
+/* Resets */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+/* General CSS */
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: hsl(221, 100%, 96%);
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 375px;
+}
+
+.your-results {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.score {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.score-nr {
+    font-size: 3.3rem;
+    font-weight: bolder;
+    line-height: 1.3;
+    color: white;
+}
+
+.result {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.data {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.data h2 {
+    font-size: 1.3rem;
+}
+
+
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.stats span {
+    display: flex;
+    gap: .6rem;
+}
+
+
+
+.numbers {
+    display: flex;
+    gap:9px
+}
+
+.btn {
+    padding: 1.2rem 0;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 35px;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media (min-width: 700px) {
+    .card {
+        max-width: 700px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .your-results {
+        padding: 2rem 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.bold {
+    font-weight: 800;
+}
+
+.lavender {
+    color:hsla(241, 100%, 89%, 0.767);
+}
+
+.dark-blue {
+    color:hsl(224, 30%, 27%);
+}
+
+.pale-blue {
+    color: hsla(224, 30%, 27%, 0.459);
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.yellow {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.teal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, .05);
+}
+
+.cobalt {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, .05);
+}
